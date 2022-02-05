@@ -15,7 +15,7 @@ This repository contains the basic usage of rust. The following falls under 'bas
 - variabels
 - vectors
 
-Note: Some comments are in English and some comments are in Dutch.
+Note: Some comments are in English and some are in Dutch.
 
 ## Why?
 
