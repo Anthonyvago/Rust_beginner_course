@@ -5,6 +5,11 @@ Er zijn twee soorten strings;
 */
 
 pub fn run() {
+    println!();
+    println!("*********************");
+    println!("***** strings.rs *****");
+    println!("*********************");
+
     let /*mut*/ hello1 = "hello1"; // Primitive
     let mut hello2 = String::from("hello2 "); // Te bewerken
     
@@ -39,7 +44,7 @@ pub fn run() {
     assert_eq!(2, s.len()); // Voor testen van programma's
     assert_eq!(10, s.capacity());
 
-    println!("{}", s)
+    println!("{}", s);
     
     // Print both strings:
     println!("{:?}", (hello1, hello2));

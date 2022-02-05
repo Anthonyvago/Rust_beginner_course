@@ -5,6 +5,11 @@ Arrays zijn vaste lengtes waar alle elementen dezelfde type hebben.
 use std::mem;
 
 pub fn run() {
+    println!();
+    println!("*********************");
+    println!("***** arrays.rs *****");
+    println!("*********************");
+
     let mut nrs: [i32; 5] = [1, 2, 3, 4, 5];
     // let nrs: [i32; 5] = [1, 2, 3, 4]; Foutmelding aangezien deze arrray 4 lang is.
 

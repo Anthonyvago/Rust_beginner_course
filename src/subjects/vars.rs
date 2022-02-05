@@ -1,6 +1,11 @@
 // Standaard is een variabele niet te veranderen.
 
 pub fn run() {
+    println!();
+    println!("*********************");
+    println!("***** vars.rs *****");
+    println!("*********************");
+
     let name = "Brad"; // Niet te wijzigen
 
     let mut age = 37; // Wel te wijzigen

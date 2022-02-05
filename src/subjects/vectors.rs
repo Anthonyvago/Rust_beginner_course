@@ -5,6 +5,11 @@ Vectors zijn aanpasbare arrays (size aanpassen).
 use std::mem;
 
 pub fn run() {
+    println!();
+    println!("*********************");
+    println!("***** vectors.rs *****");
+    println!("*********************");
+
     let mut nrs: Vec<i32> = vec![1, 2, 3, 4];
     // let nrs: [i32; 5] = [1, 2, 3]; Foutmelding aangezien deze arrray 4 lang is.
 

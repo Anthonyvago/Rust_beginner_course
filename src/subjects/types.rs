@@ -16,6 +16,11 @@ de compiler kan inschatten welke dit is.
 */
 
 pub fn run() {
+    println!();
+    println!("*********************");
+    println!("***** types.rs *****");
+    println!("*********************");
+
     let x = 1; // Standaard is dit een i32.
 
     let y = 2.5; // Standaard is dit een f64.
