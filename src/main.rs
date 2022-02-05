@@ -1,44 +1,16 @@
-mod subjects;
-
-use subjects::arrays;
-use subjects::cli;
-use subjects::conditionals;
-use subjects::enums;
-use subjects::functions;
-use subjects::loops;
-use subjects::pointer_ref;
-use subjects::strings;
-use subjects::structs;
-use subjects::tuples;
-use subjects::types;
-use subjects::vars;
-use subjects::vectors;
-
-use std::env;
-
-fn argHandler() {
-    for arg in env::args() {
-        if cli::valid_arg(arg.clone()) {
-            match arg.as_str() {
-                "arrays.rs" => arrays::run(),
-                "cli.rs" => cli::run(),
-                "conditionals.rs" => conditionals::run(),
-                "enums.rs" => enums::run(),
-                "functions.rs" => functions::run(),
-                "loops.rs" => loops::run(),
-                "pointer_refs.rs" => pointer_ref::run(),
-                "strings.rs" => strings::run(),
-                "structs.rs" => structs::run(),
-                "tuples.rs" => tuples::run(),
-                "types.rs" => types::run(),
-                "vars.rs" => vars::run(),
-                "vectors.rs" => vectors::run(),
-                _ => println!("Argument '{}' is ongeldig!", arg),
-            }
-        }
-    }
-}
+/**
+ * Dit project is gemaakt met behulp van de volgende video: https://www.youtube.com/watch?v=zF34dRivLOw.
+ * Ik (zie auteur) heb deze video in zijn volledigheid gevolgd en kan hierdoor aantonen dat ik de basis
+ * van rust begrijp en zelf kan implementeren. Dit is te zien door het hieronderstaande uit te voeren of
+ * door te kijken naar "arg_handler.rs". 
+ *
+ * Hoe te gebruiken?
+ * In de 'subjects'-map (te vinden in de src) zijn er 13 rust-bestanden geschreven aan de hand van bovenstaande video.
+ * Voer het volgende uit in de root van dit project: cargo run <.rs-bestand>.
+ * Er kunnen ook meerdere .rs-bestanden worden meegegeven. Voorbeeld: 'cargo run loops.rs arrays.rs'.
+ */
+mod arg_handler;
 
 fn main() {
-    argHandler(); 
+    arg_handler::arg_handler();
 }
