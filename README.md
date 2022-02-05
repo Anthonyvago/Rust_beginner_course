@@ -13,7 +13,9 @@ This repository contains the basic usage of rust. The following falls under 'bas
 - tuples
 - types
 - variabels
-- vectors 
+- vectors
+
+Note: Some comments are in English and some comments are in Dutch.
 
 ## Why?
 
