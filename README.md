@@ -17,4 +17,20 @@ This repository contains the basic usage of rust. The following falls under 'bas
 
 ## Why?
 
-Normally I only program in C and C++ for embedded systems, but I wanted to try out Rust and get to know it's basics as it is the "most loved" programming language according to the StackOverflow community.
+Normally I only program in C and C++ for embedded systems, but I wanted to try out something new.
+As Rust is the "most loved" programming language according to the Stack Overflow community, I wanted to know it's basics.
+
+Also, many companies in the embedded-programming-world are using Rust. As a student, almost ready for the real thing, having knowledge about the basics of Rust can come in handy.
+
+## Usage
+Be sure you execute  the following command in the root of the project:
+
+> cargo run <.rs-file>
+
+- The placeholder for the <.rs-file> can be any file inside the following folder: **src/subjects**.
+- It is possible to give more than one argument (see example).
+
+### Example:
+> cargo run loops.rs arrays.rs
+
+The program will run the function **run()** in both files.
